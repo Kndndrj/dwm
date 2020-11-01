@@ -8,14 +8,14 @@ I like the simple yet practical look of my window managers (or desktop enviromen
 
 ## Installation
 1. Clone this repository.
-2. Open ```config.def.h``` and check to see if there are any settings that aren't suitable for your system. Be sure to check the lines with 
-  - ```static const char *dmenucmd[]```,
-  - ```static const char *termcmd[]``` and
-  - ```static const char *scratchpadcmd[]```,
+2. Open ```config.def.h``` and check to see if there are any settings that aren't suitable for your system. Be sure to check the lines with<br/>
+```static const char *dmenucmd[]```,<br/>
+```static const char *termcmd[]``` and<br/>
+```static const char *scratchpadcmd[]```,<br/>
   as you are probably using a different terminal emulator and app launcher. Also check the ```keys[]``` section and set the key bindings to your own taste.
-3. Finnaly install dwm with:
+3. Finnaly install dwm with:<br/>
 ```make install```
-4. Tip: I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:
+4. Tip: I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:<br/>
 ```pacman -S ttf-font-awesome```
 
 ## Patches
