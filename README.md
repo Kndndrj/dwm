@@ -7,9 +7,15 @@ Its Suckless.org's window manager (minimalist code + source code is a config fil
 I like the simple yet practical look of my window managers (or desktop enviroments), so my build is patched only with patches I really like. The resizable gaps with multiple layouts are practical, because I believe that sometimes you need to look at something in a small window for it to make sense. For the colorscheme i like soft colors, but they also need to be seen clearly - I think that this green color is perfect for that. For the status bar I use ```dwmblocks``` because it's basically the same as i3blocks, which I used before on i3 plus it enables clickable modules.
 
 ## Installation
-Just clone this repository and run:<br/>
-```make install```<br/>
-I also use font awesome icons for displaying the current layout (i don't like color emojis). If you are on Arch, install the font with:<br/>
+1. Clone this repository.
+2. Open ```config.def.h``` and check to see if there are any settings that aren't suitable for your system. Be sure to check the lines with 
+  - ```static const char *dmenucmd[]```,
+  - ```static const char *termcmd[]``` and
+  - ```static const char *scratchpadcmd[]```,
+  as you are probably using a different terminal emulator and app launcher. Also check the ```keys[]``` section and set the key bindings to your own taste.
+3. Finnaly install dwm with:
+```make install```
+4. Tip: I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:
 ```pacman -S ttf-font-awesome```
 
 ## Patches
