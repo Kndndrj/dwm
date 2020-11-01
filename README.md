@@ -13,10 +13,14 @@ I like the simple yet practical look of my window managers (or desktop enviromen
 ```static const char *termcmd[]``` and<br/>
 ```static const char *scratchpadcmd[]```,<br/>
   as you are probably using a different terminal emulator and app launcher. Also check the ```keys[]``` section and set the key bindings to your own taste.
-3. Finnaly install dwm with:<br/>
-```make install```
+3. Finnaly install dwm with:
+```bash
+make install
+```
 4. Tip: I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:<br/>
-```pacman -S ttf-font-awesome```
+```bash
+pacman -S ttf-font-awesome
+```
 
 ## Patches
 My build is patched with:
@@ -32,3 +36,4 @@ My build is patched with:
 ## Screenshot
 ![alt text](./screenshot.png)
 
+**Tip:** When you clone the repository be sure to delete ```screenshot.png``` - you wouldn't want your friends to see you with a such *bloated* repository on your system :)
