@@ -8,9 +8,9 @@ I like the simple yet practical look of my window managers (or desktop enviromen
 
 ## Installation
 Just clone this repository and run:<br/>
-```sudo make install```<br/>
+```make install```<br/>
 I also use font awesome icons for displaying the current layout (i don't like color emojis). If you are on Arch, install the font with:<br/>
-```sudo pacman -S ttf-font-awesome```
+```pacman -S ttf-font-awesome```
 
 ## Patches
 My build is patched with:
