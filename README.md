@@ -17,7 +17,7 @@ I like the simple yet practical look of my window managers (or desktop enviromen
 ```bash
 make install
 ```
-4. Tip: I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:<br/>
+4. I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:<br/>
 ```bash
 pacman -S ttf-font-awesome
 ```
