@@ -36,15 +36,17 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                          instance    title	          tags mask    isfloating   monitor */
-	{ "discord",                      NULL,       NULL,               1 << 8,      0,           -1 },
-	{ "Microsoft Teams - Preview",    NULL,       NULL,               1 << 7,      0,           -1 },
-	{ "Alacritty",                    NULL,       "Popup",            0,           1,           -1 },
-	{ "Alacritty",                    NULL,       "File Manager",     0,           1,           -1 },
+	/* class                                        instance    title	          tags mask    isfloating   monitor */
+	{ "Alacritty",                                  NULL,       "File Manager",     0,           1,           -1 },
+	{ "Alacritty",                                  NULL,       "Popup",            0,           1,           -1 },
+	{ "com-st-microxplorer-maingui-STM32CubeMX",    NULL,       NULL,               0,           1,           -1 },
+	{ "discord",                                    NULL,       NULL,               1 << 8,      0,           -1 },
+	{ "Microsoft Teams - Preview",                  NULL,       NULL,               1 << 7,      0,           -1 },
+	{ "Slack",                                      NULL,       NULL,               1 << 7,      0,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.60; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int attachdirection = 2;    /* 0 default, 1 above, 2 aside, 3 below, 4 bottom, 5 top */
@@ -54,8 +56,8 @@ static const int attachdirection = 2;    /* 0 default, 1 above, 2 aside, 3 below
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "\uf0c8\uf149",   dwindle },  /* first entry is default */
 	{ "\uf0c8\uf0c9",   tile },
+	{ "\uf0c8\uf149",   dwindle },  /* first entry is default */
 	{ " \uf06c ",       NULL },    /* no layout function means floating behavior */
 	{ "\uf24d",         monocle },
 	{ "\uf00a",         grid },

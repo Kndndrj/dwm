@@ -24,7 +24,7 @@ pacman -S ttf-font-awesome
 
 ## Patches
 My build is patched with:
-- ```vanitygaps```, which comes with all sorts of layouts and enables gaps for them. I only use a few of these layouts (my favourite and default is "dwindle" - like fibonacci but more practical in my opinion), so i usually comment out the ones I don't use in the source code (```vanitygaps.c```). The resizable gaps are also very handy.
+- ```vanitygaps```, which comes with all sorts of layouts and enables gaps for them. I only use a few of these layouts (my favourite is "dwindle" - like fibonacci but more practical in my opinion), so i usually comment out the ones I don't use in the source code (```vanitygaps.c```). The resizable gaps are also very handy.
 - ```attachdirection``` enables the new window to be opened to the right (a bit like i3). I find this to be more practical in most cases.
 - ```hide-vacant-tags``` just hides the tags that have no windows open (also like i3)
 - ```scratchpad``` is a really practical tool for those moments when you need to open a terminal for "just this simple thing"
