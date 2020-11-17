@@ -19,7 +19,7 @@ make install
 ```
 4. I use font awesome icons for displaying the current layout (i don't like color emojis), so you will probably want to install it. If you are on Arch, install the font by using the following command:<br/>
 ```bash
-pacman -S ttf-font-awesome
+pacman -S awesome-terminal-fonts
 ```
 
 ## Patches
