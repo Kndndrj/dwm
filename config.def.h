@@ -37,6 +37,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                          instance    title	          tags mask    isfloating   monitor */
+	/* class                                        instance    title	          tags mask    isfloating   monitor */
 	{ "Alacritty",                                  NULL,       "File Manager",     0,           1,           -1 },
 	{ "Alacritty",                                  NULL,       "Popup",            0,           1,           -1 },
 	{ "com-st-microxplorer-maingui-STM32CubeMX",    NULL,       NULL,               0,           1,           -1 },
@@ -58,6 +59,8 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "\uf0c8\uf0c9",   tile },   /* first entry is default */
 	{ "\uf0c8\uf149",   dwindle },	
+	{ "\uf0c8\uf0c9",   tile },
+	{ "\uf0c8\uf149",   dwindle },  /* first entry is default */
 	{ " \uf06c ",       NULL },    /* no layout function means floating behavior */
 	{ "\uf24d",         monocle },
 	{ "\uf00a",         grid },
