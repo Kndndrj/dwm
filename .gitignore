@@ -2,4 +2,7 @@
 *.rej
 *.o
 config.h
+compile_commands.json
+.cache
+.clangd
 dwm
