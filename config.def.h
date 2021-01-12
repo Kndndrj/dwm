@@ -21,11 +21,11 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_green[]       = "#18815f";
+static const char col_green[]       = "#deda60";
 static const char *colors[][4]      = {
 	/*               fg         bg         border     float-border */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_green, col_green, col_gray3 },
+	[SchemeSel]  = { col_gray1, col_green, col_green, col_gray3 },
 };
 
 /* tagging */
@@ -88,8 +88,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
-static const char *windowcmd[] = { "rofi", "-show", "window", "-show-icons", NULL };
+static const char *dmenucmd[] = { "rofi", "-show", "drun", "-show-icons", "-display-drun", "Run", NULL };
+static const char *windowcmd[] = { "rofi", "-show", "window", "-show-icons", "-display-window", "Windows", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char scratchpadname[] = "Scratchpad";
 static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname };
